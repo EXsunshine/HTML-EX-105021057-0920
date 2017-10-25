@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    max-width: 1000px;
+    background-color: #a94d5a;
+    margin:0 auto auto auto;
+
+}
+#footer{
+    height: 80px;
+    width: 100%;
+    background-color: #bd719b;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    text-shadow: 2px 2px 5px rgb(255,255,0);
+
+}

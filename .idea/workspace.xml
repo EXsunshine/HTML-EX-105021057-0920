@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa722f9b-3457-4d2a-9555-ec762a5dbf27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/Activity.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/Program.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/Profile.html" afterPath="$PROJECT_DIR$/Dome2/Profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/hw.html" afterPath="$PROJECT_DIR$/Dome2/hw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -194,7 +189,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -302,7 +297,7 @@
       <workItem from="1514213397788" duration="335000" />
       <workItem from="1514298298924" duration="1790000" />
       <workItem from="1514300124982" duration="1676000" />
-      <workItem from="1514301955932" duration="1365000" />
+      <workItem from="1514301955932" duration="1380000" />
     </task>
     <task id="LOCAL-00001" summary="Html">
       <created>1505878552750</created>
@@ -325,14 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512532388905</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1226_105021057">
+      <created>1514303333931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514303333931</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49757000" />
+    <option name="totallyTimeSpent" value="49772000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -365,7 +367,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Html" />
     <MESSAGE value="1206_105021057" />
-    <option name="LAST_COMMIT_MESSAGE" value="1206_105021057" />
+    <MESSAGE value="1226_105021057" />
+    <option name="LAST_COMMIT_MESSAGE" value="1226_105021057" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

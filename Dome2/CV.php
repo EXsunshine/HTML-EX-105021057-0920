@@ -55,13 +55,13 @@
                     width="120" height="120" align="left"></p>        </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="hw.html">Home</a></li>
-                <li ><a href="Profile.html">Profile</a></li>
-                <li><a href="Activity.html">Activity</a></li>
-                <li><a href="Program.html">Program</a></li>
+                <li><a href="hw.php">Home</a></li>
+                <li ><a href="Profile.php">Profile</a></li>
+                <li><a href="Activity.php">Activity</a></li>
+                <li><a href="Program.php">Program</a></li>
                 <li><a href="https://www.researchgate.net/profile/Cheng_Yuan_Ho">ResearchGate</a></li>
                 <li><a href="https://tw.linkedin.com/in/chengyuanho/">Linkedin</a></li>
-                <li class="active"><a href="CV.html">CV</a></li>
+                <li class="active"><a href="CV.php">CV</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>            </ul>
@@ -72,7 +72,7 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="200" height="300" type="application/x-shockwave-flash"></body>
+            <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
         <div class="col-sm-8 text-left">
             <div>
@@ -88,12 +88,10 @@
                     </font>
 
                 </p>
-            </div>
 
-            <div class="col-sm-2 sidenav">
-
-            </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <footer class="container-fluid text-center">

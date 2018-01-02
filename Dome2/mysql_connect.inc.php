@@ -24,7 +24,7 @@ if(!@mysqli_connect($db_server, $db_user, $db_passwd,$db_name))
 mysqli_query("SET NAMES utf8");
 
 //選擇資料庫
-//if(!@mysqli_select_db($db_name))
+if(!@mysqli_select_db($db_name))
 //    die("無法使用資料庫");
 //?>
 

@@ -55,13 +55,13 @@
                     width="120" height="120" align="left"></p>        </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="hw.html">Home</a></li>
-                <li ><a href="Profile.html">Profile</a></li>
-                <li class="active"><a href="Activity.html">Activity</a></li>
-                <li><a href="Program.html">Program</a></li>
+                <li><a href="hw.php">Home</a></li>
+                <li ><a href="Profile.php">Profile</a></li>
+                <li class="active"><a href="Activity.php">Activity</a></li>
+                <li><a href="Program.php">Program</a></li>
                 <li><a href="https://www.researchgate.net/profile/Cheng_Yuan_Ho">ResearchGate</a></li>
                 <li><a href="https://tw.linkedin.com/in/chengyuanho/">Linkedin</a></li>
-                <li><a href="CV.html">CV</a></li>
+                <li><a href="CV.php">CV</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>            </ul>
@@ -72,7 +72,7 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="200" height="300" type="application/x-shockwave-flash"></body>
+            <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
         <div class="col-sm-8 text-left">
         <div>
@@ -81,25 +81,25 @@
                 [Academic Achievements]
             </font>
             <ol>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 He participated the National Computer Programming Competition (university	group) and finished masterpiece in 2002.
             </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 He participated the Computer Programming Competition of the Department of	Information and Computer Education, National Taiwan Normal University and obtained third award in 2002.
 
             </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 An honor student award of the Department of Mathematics, National Taiwan Normal University in 2001.
 
             </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 A cadre member: for example, a class chairman, general affairs, etc.
 
             </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 He has been awarded a variety of fellowships and commendations: such as (1) Pao-An Temple (generally known as “Ta-Lon Tong Ta-Tao-Gon Temple”) in 2001, 2002, 2003, (2) Lung-Shan Temple, Taipei in 2002, and (3) a farmers' association from 1999 to 2002, etc.
             </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
+            <li style="margin-top: 18px;margin-bottom: 18px;">
                 An honor student award of the Department of Computer Science and Information Engineering, National Chiao Tung University in 2004.
 
             </li>
@@ -109,11 +109,13 @@
             </ol>
         </ol>
             </p>
-        </div>
+        <!--</div>-->
 
-        <div class="col-sm-2 sidenav">
+        <!--<div class="col-sm-2 sidenav">-->
 
-        </div>
+        <!--</div>-->
+    </div>
+</div>
     </div>
 </div>
 

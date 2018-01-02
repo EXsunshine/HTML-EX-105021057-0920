@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa722f9b-3457-4d2a-9555-ec762a5dbf27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/member.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/register_finish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dome2/updateTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Dome2/Activity.html" afterPath="$PROJECT_DIR$/Dome2/Activity.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Dome2/CV.html" afterPath="$PROJECT_DIR$/Dome2/CV.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Dome2/Profile.html" afterPath="$PROJECT_DIR$/Dome2/Profile.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Dome2/Program.html" afterPath="$PROJECT_DIR$/Dome2/Program.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Dome2/hw.html" afterPath="$PROJECT_DIR$/Dome2/hw.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/connect.php" afterPath="$PROJECT_DIR$/Dome2/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/mysql_connect.inc.php" afterPath="$PROJECT_DIR$/Dome2/mysql_connect.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/testhw.html" afterPath="$PROJECT_DIR$/Dome2/testhw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index1.html" afterPath="$PROJECT_DIR$/index1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index3.html" afterPath="$PROJECT_DIR$/index3.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,8 +85,8 @@
       <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dome2/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="286">
+              <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding>
                 <marker date="1514908153744" expanded="true" signature="323:370" ph="SELECT * FRO... member_table" />
               </folding>
@@ -187,7 +169,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -300,7 +282,7 @@
       <workItem from="1514907764574" duration="1669000" />
       <workItem from="1514909571168" duration="1790000" />
       <workItem from="1514911379538" duration="1050000" />
-      <workItem from="1514914345795" duration="4000" />
+      <workItem from="1514914345795" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="Html">
       <created>1505878552750</created>
@@ -330,14 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514303333931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0103_105021057">
+      <created>1514914366001</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514914366001</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70003000" />
+    <option name="totallyTimeSpent" value="70101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -371,7 +360,8 @@
     <MESSAGE value="Html" />
     <MESSAGE value="1206_105021057" />
     <MESSAGE value="1226_105021057" />
-    <option name="LAST_COMMIT_MESSAGE" value="1226_105021057" />
+    <MESSAGE value="0103_105021057" />
+    <option name="LAST_COMMIT_MESSAGE" value="0103_105021057" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dome2/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="286">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <marker date="1514908153744" expanded="true" signature="323:370" ph="SELECT * FRO... member_table" />
           </folding>

@@ -75,53 +75,97 @@
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
         <div class="col-sm-8 text-left">
-        <div>
-            <p align="justify">
-            <font size="6">
-                [Academic Achievements]
-            </font>
-            <ol>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                He participated the National Computer Programming Competition (university	group) and finished masterpiece in 2002.
-            </li>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                He participated the Computer Programming Competition of the Department of	Information and Computer Education, National Taiwan Normal University and obtained third award in 2002.
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#home">Professional Activities</a></li>
+                <li><a data-toggle="pill" href="#menu1">Academic Achievements</a></li>
+            </ul>
 
-            </li>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                An honor student award of the Department of Mathematics, National Taiwan Normal University in 2001.
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <p align="justify">
+                        <font size="6">  Professional Activities</font>
+                    <font size="4">
+                        <ol>
+                            <li >The 3rd among the winners of 2013 III Technology Contest (Project: Community-based Healthcare Service).</li>
+                            <li>Nomination for 2013 R&amp;D 100 Awards (Project: Community-based Healthcare Service).</li>
+                            <li >A winner of Microsoft Fellowship 2005.</li>
+                            <li>An intern in the Wireless and Networking Group, Microsoft Research, Asia,
+                                Beijing, China, from March to September 2006.</li>
+                            <li >2011 Who's Who in the World.</li>
+                            <li >2007 Who's Who in Science and Engineering.</li>
+                            <li >A Member of IEEE, ACM, and IEICE.</li>
+                            <li >A Member of IEEE Communications Society.</li>
+                            <li >Editorial board of
+                                <ul>
+                                    <li >
+                                        <a target="_blank" href="http://www.pspchv.com/editorial_board_PJCSET.html">Pioneer Journal of Computer Science and Engineering Technology</a></li></ul>
+                            </li><li >Executive Committee Member of
+                                <ul>
+                                    <li >2017 International Conference for Big Data and AI in Medical &amp; FinTech
+                                    </li></ul>
+                            </li><li >Technical Program Committee Member of
+                                <ul>
+                                    <li >IEEE
+                                        International Conference on Networking and Services 2005 (ICNS)
+                                    </li></ul>
+                           </ol>
+                    </font>
+                    </p>
 
-            </li>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                A cadre member: for example, a class chairman, general affairs, etc.
+                </div>
+                <div id="menu1" class="tab-pane fade ">
+                    <p >
+                        <font size="6">
+                            Academic Achievements
+                        </font>
+                        <font size="4" >
+                            <ol>
+                                <li >
+                                    He participated the National Computer Programming Competition (university	group) and finished masterpiece in 2002.
+                                </li>
+                                <li >
+                                    He participated the Computer Programming Competition of the Department of	Information and Computer Education, National Taiwan Normal University and obtained third award in 2002.
 
-            </li>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                He has been awarded a variety of fellowships and commendations: such as (1) Pao-An Temple (generally known as “Ta-Lon Tong Ta-Tao-Gon Temple”) in 2001, 2002, 2003, (2) Lung-Shan Temple, Taipei in 2002, and (3) a farmers' association from 1999 to 2002, etc.
-            </li>
-            <li style="margin-top: 18px;margin-bottom: 18px;">
-                An honor student award of the Department of Computer Science and Information Engineering, National Chiao Tung University in 2004.
+                                </li>
+                                <li>
+                                    An honor student award of the Department of Mathematics, National Taiwan Normal University in 2001.
 
-            </li>
-            <li style="margin-top: 15px;margin-bottom: 15px;">
-                Exempt from entrance examination for admission to Ph. D. program of the Department of Computer Science and Information Engineering, National Chiao Tung University directly in 2004.      </li>
+                                </li>
+                                <li>
+                                    A cadre member: for example, a class chairman, general affairs, etc.
 
-            </ol>
-        </ol>
-            </p>
-        <!--</div>-->
+                                </li>
+                                <li >
+                                    He has been awarded a variety of fellowships and commendations: such as (1) Pao-An Temple (generally known as “Ta-Lon Tong Ta-Tao-Gon Temple”) in 2001, 2002, 2003, (2) Lung-Shan Temple, Taipei in 2002, and (3) a farmers' association from 1999 to 2002, etc.
+                                </li>
+                                <li>
+                                    An honor student award of the Department of Computer Science and Information Engineering, National Chiao Tung University in 2004.
 
-        <!--<div class="col-sm-2 sidenav">-->
+                                </li>
+                                <li >
+                                    Exempt from entrance examination for admission to Ph. D. program of the Department of Computer Science and Information Engineering, National Chiao Tung University directly in 2004.      </li>
 
-        <!--</div>-->
+                            </ol>
+                            </ol></font>
+                    </p>
+                </div>
+
+
+    </div>
+        </div>
+        </div>
     </div>
 </div>
-    </div>
-</div>
-
-<footer class="container-fluid text-center">
-    <p>Footer Text</p>
-</footer>
-
+        <footer class="container-fluid text-center">
+            <P>來客數量</P>
+            <script language="Javascript">
+                document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
+                <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
+            <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
+                        <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
+            <p>沒有很可以但是我真的承受不起</p>
+        </footer>
 </body>
+
 </html>

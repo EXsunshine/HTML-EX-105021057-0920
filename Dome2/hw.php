@@ -35,7 +35,17 @@ session_start();
             color: white;
             padding: 15px;
         }
+        .homeimage {
 
+            /*height: 518;*/
+            /*width: 389;*/
+            background: url('boi1.png') no-repeat;
+
+        }
+
+        .homeimage:hover {
+            background: url('bio2.JPG') no-repeat;
+        }
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
@@ -89,14 +99,11 @@ session_start();
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
         <div class="col-sm-8 text-left">
-            <a onmouseout="boi1.png" onmouseover="bio2.JPG">
-                <img src="boi1.png" >
-            </a>
 
-
+                <img class=" homeimage" width="518" height="389" border="0" />
 
             <hl>
-            <img src="../img/1.jpg" height="51" width="606"/>
+            <img src="../img/1.jpg" height="auto" width="auto">
                 </hl>
                     <p>
             <span style="font-size: 1.5em">Associate Professor of Practice
@@ -111,9 +118,8 @@ session_start();
             <p>
                 <span style="font-size: 1.5em">
                     Email:
-                <img src="../img/1.png" height="32" width="318"/>
+                tommyho@asia.edu.tw
                 ;
-                <img src="../img/2.gif" height="18" width="200"/>
                     Tel: +886-4-2332-3456 #1852
                 </span>
             </p>
@@ -124,7 +130,13 @@ session_start();
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Footer Text</p>
+    <P>來客數量</P>
+    <script language="Javascript">
+        document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
+        <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
+    <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
+                <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
+    <p>沒有很可以但是我真的承受不起</p>
 </footer>
 
 </body>

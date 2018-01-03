@@ -100,15 +100,19 @@ session_start();
                     <div id="home" class="tab-pane fade in active">
                         <h3>Education Background</h3>
 
-                        <ul>
-                           <li> Ph. D. degree: Department of Computer Science, National Chiao Tung University, Sep., 2004 ~ Jun., 2008.</li>
-                            <li> M.S. degree: Department of Computer Science and Information Engineering, National Chiao Tung University, Sep., 2003 ~ Jun., 2004. (He enrolled into Ph. D. program directly)</li>
-                        <li>Two Bachelor degrees: (1) Department of Mathematics, and (2) Department of Information and Computer Education, National Taiwan Normal University, Sep., 1999 ~ Jun., 2003.</li>
-                        </ul>
+                            <font size="4">
+                                    <ul>
+                           <li > Ph. D. degree: Department of Computer Science, National Chiao Tung University, Sep., 2004 ~ Jun., 2008.</li>
+                            <li > M.S. degree: Department of Computer Science and Information Engineering, National Chiao Tung University, Sep., 2003 ~ Jun., 2004. (He enrolled into Ph. D. program directly)</li>
+                        <li >Two Bachelor degrees: (1) Department of Mathematics, and (2) Department of Information and Computer Education, National Taiwan Normal University, Sep., 1999 ~ Jun., 2003.</li>
+                                    </ul>
+                            </font>
+
 
                     </div>
                     <div id="menu1" class="tab-pane fade">
                         <h3>Professional Experience</h3>
+                        <font size="4">
                     <ul>
                         <li>Chief of Development Division, Big Data Research Center, Asia University, May, 2017 ~ Present.</li>
                         <li>Associate Professor of Practice, Department of Computer Science and Information Engineering, Asia University, Feb., 2017 ~ Present.</li>
@@ -120,13 +124,15 @@ session_start();
                         <li>Postdoctoral Researcher, D-Link NCTU Joint Research Center (DNJRC), National Chiao Tung University, Jul., 2008 ~ Jul., 2010.</li>
                         <li> Research Intern, Wireless and Networking Group, Microsoft Research Asia, Mar., 2006 ~ Sep., 2006.</li>
                     </ul>
+                        </font>
                     </div>
                     <div id="menu2" class="tab-pane fade">
                         <h3>Administrative Assistant Experience</h3>
-                    <ul><li>(Chinese) 下一世代資訊通訊網路尖端技術與應用(二) ─ 子計畫五：網路安全: Dec., 2006 ~ Jun., 2008.</li></ul>
+                    <font size="4"><ul><li>(Chinese) 下一世代資訊通訊網路尖端技術與應用(二) ─ 子計畫五：網路安全: Dec., 2006 ~ Jun., 2008.</li></ul></font>
                     </div>
                     <div id="menu3" class="tab-pane fade">
                         <h3>Research Interests</h3>
+                        <font size="4">
                     <ol>
                         <li>Information-Centric Networking (ICN)</li>
                         <li>Design, Analysis, and Modeling of the Network Protocols/Congestion Control Algorithms</li>
@@ -136,6 +142,7 @@ session_start();
                         <li>Quality of Service/Experience</li>
                         <li>Internet Application/APP Development</li>
                     </ol>
+                        </font>
                     </div>
                 </div>
             <!--</div>-->
@@ -149,7 +156,13 @@ session_start();
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Footer Text</p>
+    <P>來客數量</P>
+    <script language="Javascript">
+        document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
+        <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
+    <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
+                <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
+    <p>沒有很可以但是我真的承受不起</p>
 </footer>
 
 </body>

@@ -95,7 +95,13 @@
     </div>
 
     <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <P>來客數量</P>
+        <script language="Javascript">
+            document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
+            <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
+        <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
+                    <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
+        <p>沒有很可以但是我真的承受不起</p>
     </footer>
 
 </body>

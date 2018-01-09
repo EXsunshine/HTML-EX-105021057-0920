@@ -7,18 +7,24 @@
  */?>
 
 <!-- 設定網頁編碼為UTF-8 -->
+<link rel="stylesheet" href="../CSS/set.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<div id="fullscreen_bg" class="fullscreen_bg"/>
+
+<body style="background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');background-position: 45% 45%;background-size: cover;background-repeat:repeat;">
 
 <div class="container">
 
-    <form class="form-signin" name="form" method="post" action="connect.php">
+    <form style="max-width: 280px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top:50px;" name="form" method="post" action="connect.php">
         <h1 class="form-signin-heading text-muted">Sign In</h1>
-        <input type="text" name="id" class="form-control" placeholder="ID" required="" autofocus="">
-        <input type="password" name="pw" class="form-control" placeholder="Password" required="">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">
+       <h1> <input type="text" name="id" class="form-control" placeholder="ID" required="" autofocus=""></h1>
+        <h1><input type="password" name="pw" class="form-control" placeholder="Password" required=""></h1>
+        <h1><button class="btn btn-lg btn-primary btn-block" type="submit">
             Sign In
-        </button>
+        </button></h1>
     </form>
 
 </div>
+</body>

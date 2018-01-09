@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa722f9b-3457-4d2a-9555-ec762a5dbf27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/set.css" afterPath="$PROJECT_DIR$/CSS/set.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/Activity.php" afterPath="$PROJECT_DIR$/Dome2/Activity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/CV.php" afterPath="$PROJECT_DIR$/Dome2/CV.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/Profile.php" afterPath="$PROJECT_DIR$/Dome2/Profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/Program.php" afterPath="$PROJECT_DIR$/Dome2/Program.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dome2/login.php" afterPath="$PROJECT_DIR$/Dome2/login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -162,7 +156,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1209" />
     <option name="height" value="1036" />
   </component>
@@ -284,7 +278,7 @@
       <workItem from="1515504477749" duration="1193000" />
       <workItem from="1515506899543" duration="1791000" />
       <workItem from="1515508719134" duration="1276000" />
-      <workItem from="1515511569585" duration="3000" />
+      <workItem from="1515511569585" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="Html">
       <created>1505878552750</created>
@@ -321,14 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514914366001</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0109">
+      <created>1515511588882</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515511588882</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84229000" />
+    <option name="totallyTimeSpent" value="84247000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -363,7 +364,8 @@
     <MESSAGE value="1206_105021057" />
     <MESSAGE value="1226_105021057" />
     <MESSAGE value="0103_105021057" />
-    <option name="LAST_COMMIT_MESSAGE" value="0103_105021057" />
+    <MESSAGE value="0109" />
+    <option name="LAST_COMMIT_MESSAGE" value="0109" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,6 +683,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -17,6 +17,7 @@ $db_user = "105021057";
 //資料庫管理者密碼
 $db_passwd = "#MjY4aKnM";
 //對資料庫連線
+$link = @mysqli_connect($db_server, $db_user, $db_passwd,$db_name);
 if(!@mysqli_connect($db_server, $db_user, $db_passwd,$db_name))
     die("無法對資料庫連線");
 

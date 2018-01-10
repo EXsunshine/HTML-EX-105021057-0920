@@ -7,7 +7,7 @@
  */?>
 
 <!-- 設定網頁編碼為UTF-8 -->
-<link rel="stylesheet" href="../CSS/set.css">
+<link rel="stylesheet" href="CSS/set.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <body style="background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');background-position: 45% 45%;background-size: cover;background-repeat:repeat;">

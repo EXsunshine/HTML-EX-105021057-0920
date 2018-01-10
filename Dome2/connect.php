@@ -15,7 +15,7 @@ $result = mysqli_query($c,$sql);
 $row = @mysqli_fetch_row($result);
 //判斷帳號與密碼是否為空白
 //以及MySQL資料庫裡是否有這個會員
-if($id != null && $pw != null && $row[1] == $id && $row[2] == $pw)
+if($id != null && $pw != null && $row[1] == $id && $row[2] == sha1($pw))
 {
     //將帳號寫入session，方便驗證使用者身份
     $_SESSION['username'] = $id;
@@ -28,3 +28,4 @@ else
     echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
 }
 ?>
+<!---->

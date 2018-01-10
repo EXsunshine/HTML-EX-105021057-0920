@@ -1,17 +1,15 @@
 <?php
 include("mysql_connect.inc.php");
 session_start();
-
 $sql = "SELECT * FROM hw";
 $result = mysqli_query($link,$sql);
 $row = mysqli_fetch_row($result);
-
 ?>
 <!--上方語法為啟用session，此語法要放在網頁最前方-->
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Home修改業面</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +22,7 @@ $row = mysqli_fetch_row($result);
             border-radius: 0;
             background-color: #FAF0E6;
         }
-       /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {height: 450px}
 
         /* Set gray background color and 100% height */
@@ -59,8 +57,8 @@ $row = mysqli_fetch_row($result);
             }
             .row.content {height:auto;}
         }
-       
-        </style>
+
+    </style>
 </head>
 <body>
 
@@ -83,14 +81,15 @@ $row = mysqli_fetch_row($result);
                 <li><a href="https://www.researchgate.net/profile/Cheng_Yuan_Ho">ResearchGate</a></li>
                 <li><a href="https://tw.linkedin.com/in/chengyuanho/">Linkedin</a></li>
                 <li><a href="CV.php">CV</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="hwrewrite.php"><span class="bottom">修改資料</span></a></li>';
+                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
+                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>';
                 } else {
-                echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
+                    echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
                 ?>
             </ul>
@@ -103,34 +102,18 @@ $row = mysqli_fetch_row($result);
         <div class="col-sm-2 sidenav">
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
-        <div class="col-sm-8 text-left">
+        <div class="content text-left">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <form name="form" method="post" action="hwrewrite_finish.php">
+                Titel：<input type="varchar" name="titel" value="<?php echo $row[0]; ?>" size="200"/><br>
+                Office：<input type="varchar" name="office" value=" <?php echo $row[1]; ?>" size="200"/><br>
+                Email：<input type="varchar" name="email" value="<?php echo $row[2]; ?>"size="200"/> <br>
+                Tel：<input type="varchar" name="tel"value=" <?php echo $row[3]; ?>" size="200"/><br>
+                <input type="submit" name="button" value="確定" />
+            </form>
 
-                <img class=" homeimage" width="518" height="389" border="0" />
-
-            <hl>
-            <img src="../img/1.jpg" height="auto" width="auto">
-                </hl>
-                    <p><span style="font-size: 1.5em"><?php echo "$row[0]"; ?></span></p>
-            <p>
-                <span style="font-size: 1.5em">
-                    Office:<?php echo "$row[1]"; ?>
-                </span>
-            </p>
-            <p>
-                <span style="font-size: 1.5em">
-                    Email:
-                    <?php echo "$row[2]"; ?>
-                </span>
-            </p>
-            <p>
-                <span style="font-size: 1.5em">
-                Tel:
-                    <?php echo "$row[3]"; ?>
-                                </span>
-            </p>
-
+        </div>
     </div>
-</div>
 </div>
 </div>
 

@@ -3,7 +3,6 @@ include("mysql_connect.inc.php");
 session_start();
 $sql = "SELECT * FROM EB";
 $result = mysqli_query($link,$sql);
-$row = mysqli_fetch_row($result);
 
 
 
@@ -40,6 +39,7 @@ $row = mysqli_fetch_row($result);
             color: white;
             padding: 15px;
         }
+        .text{word-break: break-all;}
 
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
@@ -97,10 +97,14 @@ $row = mysqli_fetch_row($result);
 
             <div class="content text-left">
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <form name="form" method="post" action="EBrewrite_finish.php">
-                    TOP:<input type="varchar" name="titel" value="<?php echo $row[0]; ?>" size="100%"/><br>
 
-                </form>>
+                    <?php
+                    while($row = mysqli_fetch_row($result)){
+                        echo '<form name="form" method="post" action="EBrewrite_finish.php">';
+                         echo "<textarea name=\"top\" style='height: 25% ;width: 70%; '>$row[0]</textarea><br>";
+                         echo "<textarea hidden name=\"topOrigin\" style='height: 25% ;width: 70%; '>$row[0]</textarea>";
+                 echo '<input type="submit" name="button" value="確定" /><br></form>' ;}?>
+                </form>
                 </div>
 
 

@@ -86,8 +86,9 @@ $row = mysqli_fetch_row($result);
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>';
+                    echo '
+                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>
+                    <li><a href="logout.php"><span class="bottom">Logout</span></a></li> ';
                 } else {
                     echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
@@ -105,18 +106,20 @@ $row = mysqli_fetch_row($result);
         <div class="content text-left">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <form name="form" method="post" action="hwrewrite_finish.php">
-                Titel：<input type="varchar" name="titel" value="<?php echo $row[0]; ?>" size="200"/><br>
-                Office：<input type="varchar" name="office" value=" <?php echo $row[1]; ?>" size="200"/><br>
-                Email：<input type="varchar" name="email" value="<?php echo $row[2]; ?>"size="200"/> <br>
-                Tel：<input type="varchar" name="tel"value=" <?php echo $row[3]; ?>" size="200"/><br>
+                Titel：<input type="varchar" name="titel" value="<?php echo $row[0]; ?>" size="100%"/><br>
+                Office：<input type="varchar" name="office" value=" <?php echo $row[1]; ?>" size="100%"/><br>
+                Email：<input type="varchar" name="email" value="<?php echo $row[2]; ?>"size="100%"/> <br>
+                Tel：<input type="varchar" name="tel"value=" <?php echo $row[3]; ?>" size="100%"/><br>
                 <input type="submit" name="button" value="確定" />
             </form>
 
         </div>
     </div>
 </div>
-</div>
 
+
+
+</body>
 <footer class="container-fluid text-center">
     <P>來客數量</P>
     <script language="Javascript">
@@ -126,6 +129,4 @@ $row = mysqli_fetch_row($result);
                 <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
     <p>沒有很可以但是我真的承受不起</p>
 </footer>
-
-</body>
 </html>

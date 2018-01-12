@@ -3,15 +3,9 @@ include("mysql_connect.inc.php");
 session_start();
 $sql = "SELECT * FROM EB";
 $result = mysqli_query($link,$sql);
+$row = mysqli_fetch_row($result);
 
-$sql2 = "SELECT * FROM PE";
-$result2 = mysqli_query($link,$sql2);
 
-$sql3 = "SELECT * FROM AAE";
-$result3 = mysqli_query($link,$sql3);
-
-$sql4 = "SELECT * FROM RI";
-$result4 = mysqli_query($link,$sql4);
 
 ?>
 <!DOCTYPE html>
@@ -100,80 +94,18 @@ $result4 = mysqli_query($link,$sql4);
         <div class="col-sm-2 sidenav">
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
-        <div class="col-sm-8 text-left">
 
-            <div class="container">
+            <div class="content text-left">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <form name="form" method="post" action="EBrewrite_finish.php">
+                    TOP:<input type="varchar" name="titel" value="<?php echo $row[0]; ?>" size="100%"/><br>
 
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#home">Education Background</a></li>
-                    <li><a data-toggle="pill" href="#menu1">Professional Experience</a></li>
-                    <li><a data-toggle="pill" href="#menu2">Administrative Assistant Experience</a></li>
-                    <li><a data-toggle="pill" href="#menu3">Research Interests</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
-                        <font size="4">
-                            <ul>
-                          <?php  while($row = mysqli_fetch_row($result)){
-                              echo "<li>$row[0]</li>";
-                          }
-                          ?>
-                                 </ul>
-                        </font>
-
-
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-
-
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
-                        <font size="4">
-                            <ul>
-                                <?php  while($row2 = mysqli_fetch_row($result2)){
-                                    echo "<li>$row2[0]</li>";
-                                }
-                                ?>
-                            </ul>
-                        </font>
-
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
-                        <font size="4">
-                            <ul>
-                                <?php  while($row3 = mysqli_fetch_row($result3)){
-                                    echo "<li>$row3[0]</li>";
-                                }
-                                ?>
-                            </ul>
-                        </font>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
-                        <font size="4">
-                            <ul>
-                                <?php  while($row4 = mysqli_fetch_row($result4)){
-                                    echo "<li>$row4[0]</li>";
-                                }
-                                ?>
-                            </ul>
-                        </font>
-                    </div>
+                </form>>
                 </div>
 
+
+        </div>
     </div>
-</div>
- </div>
 </div>
 
 <footer class="container-fluid text-center">

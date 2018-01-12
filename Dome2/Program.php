@@ -90,10 +90,10 @@ session_start();
             <div>
                 <p align="justify">
                     <font size="6">
-                        Teaching Experience
+                            Teaching Experience
                     </font>
                 <font size="5">
-                    <li style="margin-top: 15px;margin-bottom: 15px;">Formal Course</li>
+                    <p style="margin-top: 15px;margin-bottom: 15px;" >Formal Course</p>
                 </font>
                 <ol>
                 <font size="4"><li style="margin-top: 15px;margin-bottom: 15px;">
@@ -175,9 +175,7 @@ session_start();
                 </p>
             </div>
 
-            <!--<div class="col-sm-8 sidenav">-->
 
-            <!--</div>-->
         </div>
 
     </div>

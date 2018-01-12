@@ -22,7 +22,7 @@ if(!@mysqli_connect($db_server, $db_user, $db_passwd,$db_name))
     die("無法對資料庫連線");
 
 //資料庫連線採UTF8
-mysqli_query("SET NAMES utf8");
+mysqli_query($link,"SET NAMES utf8");
 
 //選擇資料庫
 if(!@mysqli_select_db($db_name))

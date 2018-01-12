@@ -87,9 +87,9 @@ $row = mysqli_fetch_row($result);
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="hwrewrite.php"><span class="bottom">修改資料</span></a></li>';
-                } else {
+                echo ' <li><a href="hwrewrite.php"><span class="bottom">修改資料</span></a></li>
+                    <li><a href="logout.php"><span class="bottom">Logout</span></a></li> ';
+                    } else {
                 echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
                 ?>
@@ -128,7 +128,6 @@ $row = mysqli_fetch_row($result);
                     <?php echo "$row[3]"; ?>
                                 </span>
             </p>
-
     </div>
 </div>
 </div>

@@ -1,6 +1,13 @@
 <?php
 include("mysql_connect.inc.php");
 session_start();
+
+$sql = "SELECT * FROM PA";
+$result = mysqli_query($link,$sql);
+
+$sql2 = "SELECT * FROM AA";
+$result2 = mysqli_query($link,$sql2);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,8 +77,7 @@ session_start();
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>';
+                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>';
                 } else {
                     echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
@@ -94,33 +100,21 @@ session_start();
             </ul>
 
             <div class="tab-content">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
                 <div id="home" class="tab-pane fade in active">
                     <p align="justify">
-                        <font size="6">  Professional Activities</font>
+                       <?php if ($_SESSION['username'] != null) {
+                       echo '<a href="PAadd.php"><button>新增</button></a>';
+                       echo '<a href="PArewrite.php"><button>修改</button></a>';}?>
                     <font size="4">
                         <ol>
-                            <li >The 3rd among the winners of 2013 III Technology Contest (Project: Community-based Healthcare Service).</li>
-                            <li>Nomination for 2013 R&amp;D 100 Awards (Project: Community-based Healthcare Service).</li>
-                            <li >A winner of Microsoft Fellowship 2005.</li>
-                            <li>An intern in the Wireless and Networking Group, Microsoft Research, Asia,
-                                Beijing, China, from March to September 2006.</li>
-                            <li >2011 Who's Who in the World.</li>
-                            <li >2007 Who's Who in Science and Engineering.</li>
-                            <li >A Member of IEEE, ACM, and IEICE.</li>
-                            <li >A Member of IEEE Communications Society.</li>
-                            <li >Editorial board of
-                                <ul>
-                                    <li >
-                                        <a target="_blank" href="http://www.pspchv.com/editorial_board_PJCSET.html">Pioneer Journal of Computer Science and Engineering Technology</a></li></ul>
-                            </li><li >Executive Committee Member of
-                                <ul>
-                                    <li >2017 International Conference for Big Data and AI in Medical &amp; FinTech
-                                    </li></ul>
-                            </li><li >Technical Program Committee Member of
-                                <ul>
-                                    <li >IEEE
-                                        International Conference on Networking and Services 2005 (ICNS)
-                                    </li></ul>
+                    <?php  while($row = mysqli_fetch_row($result)){
+                        echo '<form name="form" method="post" action="PAdelete.php">';
+                        echo "<li>$row[0]</li>";
+                        echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row[0]</textarea>";
+                    if ($_SESSION['username'] != null) {
+                        echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                            </ol>
                     </font>
                     </p>
@@ -128,38 +122,20 @@ session_start();
                 </div>
                 <div id="menu1" class="tab-pane fade ">
                     <p >
-                        <font size="6">
-                            Academic Achievements
-                        </font>
+                     <?php   if ($_SESSION['username'] != null) {
+                       echo '<a href="AAadd.php"><button>新增</button></a>';
+                       echo '<a href="AArewrite.php"><button>修改</button></a>';
+                     }?>
                         <font size="4" >
                             <ol>
-                                <li >
-                                    He participated the National Computer Programming Competition (university	group) and finished masterpiece in 2002.
-                                </li>
-                                <li >
-                                    He participated the Computer Programming Competition of the Department of	Information and Computer Education, National Taiwan Normal University and obtained third award in 2002.
-
-                                </li>
-                                <li>
-                                    An honor student award of the Department of Mathematics, National Taiwan Normal University in 2001.
-
-                                </li>
-                                <li>
-                                    A cadre member: for example, a class chairman, general affairs, etc.
-
-                                </li>
-                                <li >
-                                    He has been awarded a variety of fellowships and commendations: such as (1) Pao-An Temple (generally known as “Ta-Lon Tong Ta-Tao-Gon Temple”) in 2001, 2002, 2003, (2) Lung-Shan Temple, Taipei in 2002, and (3) a farmers' association from 1999 to 2002, etc.
-                                </li>
-                                <li>
-                                    An honor student award of the Department of Computer Science and Information Engineering, National Chiao Tung University in 2004.
-
-                                </li>
-                                <li >
-                                    Exempt from entrance examination for admission to Ph. D. program of the Department of Computer Science and Information Engineering, National Chiao Tung University directly in 2004.      </li>
-
+                                <?php  while($row2 = mysqli_fetch_row($result2)){
+                                    echo '<form name="form" method="post" action="AAdelete.php">';
+                                    echo "<li>$row2[0]</li>";
+                                    echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row2[0]</textarea>";
+                                if ($_SESSION['username'] != null) {
+                                    echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                             </ol>
-                            </ol></font>
+                            </font>
                     </p>
                 </div>
 

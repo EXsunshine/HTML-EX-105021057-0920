@@ -1,6 +1,8 @@
 <?php
 include("mysql_connect.inc.php");
 session_start();
+$sql = "SELECT * FROM PPP";
+$result = mysqli_query($link,$sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -89,88 +91,24 @@ session_start();
         <div class="col-sm-8 text-left">
             <div>
                 <p align="justify">
-                    <font size="6">
-                            Teaching Experience
-                    </font>
-                <font size="5">
-                    <p style="margin-top: 15px;margin-bottom: 15px;" >Formal Course</p>
+               <font size="6">Participated Projects
                 </font>
-                <ol>
-                <font size="4"><li style="margin-top: 15px;margin-bottom: 15px;">
-                    “Information and Technology” for non-CS undergraduates (Asia University): Spring and Fail 2017.
-                    <br>
-                    (Course Code:
-                    <br>
-                    <ul>
-                        <li>Spring 2017: GRG00093D, GRG00093H, GRG00093K, and GRG00093O</li>
-                        <li>Fail 2017: GRG00093A, GRG00093AA, GRG00093AI, GRG00093E, and GRG00093O
-                        </li>
-                    </ul>
-                    )
-                </li>
-                <li style="margin-top: 15px;margin-bottom: 15px;">
-                    “Introduction to Network Programming and its Hands-on Training” for graduate students (National Chiao Tung University, NCTU): Summer Semester 2009, 2010, and 2011.
-                </li>
-                </font>
-            </ol>
-               <font size="6">Short/Training Course
-                </font>
+                    <?php
+                    if ($_SESSION['username'] != null) {
+                        echo '<a href="PPPadd.php"><button>新增</button></a>';
+                        echo '<a href="PPPrewrite.php"><button>修改</button></a>';}
+                    ?>
                 <ol>
                     <font size="4">
-                        <li style="margin-top: 15px;margin-bottom: 15px;">“Refactoring: Improving the Design of Existing Code” for Sincere International Consulting Co., Ltd.: May, 2012.</li>
-                        <li style="margin-top: 15px;margin-bottom: 15px;">“Linux Networking” for Sincere International Consulting Co., Ltd.: May, 2012.
-                        </li>
-                        <li style="margin-top: 15px;margin-bottom: 15px;">“Computer Network and Network Programming” for International Games System Co., Ltd.: Oct. ~ Dec., 2010.
-                        </li>
-                        <li style="margin-top: 15px;margin-bottom: 15px;">“Introduction to Internet Applications” for Sincere International Consulting Co., Ltd.: May, 2010.
-                        </li>
+                    <?php while($row = mysqli_fetch_row($result)){
+                        echo '<form name="form" method="post" action="PPPdelete.php">';
+                    echo "<li>$row[0]</li>";
+                    echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row[0]</textarea>";
+                    if ($_SESSION['username'] != null) {
+                        echo '<input type="submit" name="top" value="刪除" /><br></form>' ;
+                    }}?>
                     </font>
                 </ol>
-                <!--<ol>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--“Computer Networks” for CS graduate students (NCTU): Spring 2007.-->
-
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--“An Introduction to the Internet” for non-CS undergraduates (NCTU): Fall 2006.-->
-
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--“Local Area Networks” for CS graduate students (NCTU): Spring 2005.-->
-
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--“Programming Languages” for CS undergraduates (NCTU): Fall 2004 and 2005.-->
-
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--2011 Who's Who in the World.-->
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--2007 Who's Who in Science and Engineering.-->
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--A Member of IEEE, ACM, and IEICE.-->
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--A Member of IEEE Communications Society.-->
-
-                    <!--</li>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                        <!--Editorial board of-->
-                    <!--</li>-->
-                    <!--<ul>-->
-                        <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                            <!--<a target="_blank" href="http://www.pspchv.com/editorial_board_PJCSET.html">Pioneer Journal of Computer Science and Engineering Technology</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                    <!--<li style="margin-top: 15px;margin-bottom: 15px;">-->
-                    <!--Executive Committee Member of-->
-                    <!--</li>-->
-                    <!--<ul style="margin-top: 15px;margin-bottom: 15px;">-->
-                    <!--2017 International Conference for Big Data and AI in Medical & FinTech-->
-                    <!--</ul>-->
-                    <!--</ol>-->
 
                 </p>
             </div>

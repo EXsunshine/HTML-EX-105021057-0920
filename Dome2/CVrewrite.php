@@ -3,12 +3,16 @@ include("mysql_connect.inc.php");
 session_start();
 $sql = "SELECT * FROM CV";
 $result = mysqli_query($link,$sql);
+
+
+
 ?>
+<?php if ($_SESSION['username'] != null){ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -36,6 +40,7 @@ $result = mysqli_query($link,$sql);
             color: white;
             padding: 15px;
         }
+        .text{word-break: break-all;}
 
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
@@ -62,22 +67,24 @@ $result = mysqli_query($link,$sql);
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="hw.php">Home</a></li>
-                <li ><a href="Profile.php">Profile</a></li>
+                <li class="active"><a href="Profile.php">Profile</a></li>
                 <li><a href="Activity.php">Activity</a></li>
                 <li><a href="Program.php">Program</a></li>
                 <li><a href="https://www.researchgate.net/profile/Cheng_Yuan_Ho">ResearchGate</a></li>
                 <li><a href="https://tw.linkedin.com/in/chengyuanho/">Linkedin</a></li>
-                <li class="active"><a href="CV.php">CV</a></li>
+                <li><a href="CV.php">CV</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>';
+                    echo '<li><a href="Profilerewrite .php"><span class="bottom">修改資料</span></a></li>
+                        <li><a href="logout.php"><span class="bottom">Logout</span></a></li>
+                        ';
                 } else {
                     echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
                 ?>
+
             </ul>
         </div>
     </div>
@@ -88,34 +95,37 @@ $result = mysqli_query($link,$sql);
         <div class="col-sm-2 sidenav">
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
-        <div class="col-sm-8 text-left">
-            <div>
-                <?php
-                if ($_SESSION['username'] != null) {
-                    echo '<a href="CVrewrite.php"><button>修改</button></a><br>';}
-                ?>
-                    <font size="6">
-                <?php while($row = mysqli_fetch_row($result)){
-                echo "$row[0]<br>";}
-                    ?>
-                    </font>
 
+        <div class="content text-left">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
+            <?php
+            while($row = mysqli_fetch_row($result)){
+                echo '<form name="form" method="post" action="CVrewrite_finish.php">';
+                echo "<textarea name=\"top\" style='height: 25% ;width: 70%; '>$row[0]</textarea><br>";
+                echo "<textarea hidden name=\"topOrigin\" style='height: 25% ;width: 70%; '>$row[0]</textarea>";
+                echo '<input type="submit" name="button" value="確定" /><br></form>' ;}?>
+            </form>
         </div>
-    </div>
-    </div>
-    </div>
 
-    <footer class="container-fluid text-center">
-        <P>來客數量</P>
-        <script language="Javascript">
-            document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
-            <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
-        <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
-                    <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
-        <p>沒有很可以但是我真的承受不起</p>
-    </footer>
+
+    </div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+    <P>來客數量</P>
+    <script language="Javascript">
+        document.write('<a href="http://www.free-counter.jp/"></a>');</script><noscript>
+        <a href="http://hrs.f-counter.com/">カウンター</a><a href="http://hqm.f-counter.com/">カウンター</a></noscript>
+    <nobr><table border="0" cellspacing="0" cellpadding="0" align="CENTER"><tbody><tr><td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani1/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td>
+                <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
+    <p>沒有很可以但是我真的承受不起</p>
+</footer>
+<?php }else{
+    echo '<p><img src="happy.JPG" > </p>';
+    echo '<button><a href="hw.php">點我回去</a></button>';
+} ?>
 
 </body>
 </html>

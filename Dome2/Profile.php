@@ -31,7 +31,7 @@ $result4 = mysqli_query($link,$sql4);
             background-color: #FAF0E6;
         }
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {height: auto}
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -82,9 +82,7 @@ $result4 = mysqli_query($link,$sql4);
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                    echo '<li><a href="Profilerewrite .php"><span class="bottom">修改資料</span></a></li>
-                        <li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        ';
+                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li> ';
                 } else {
                     echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }
@@ -112,16 +110,21 @@ $result4 = mysqli_query($link,$sql4);
                 </ul>
 
                 <div class="tab-content">
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     <div id="home" class="tab-pane fade in active">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
+                      <?php
+                      if ($_SESSION['username'] != null) {
+                        echo '<a href="EBadd.php"><button>新增</button></a>';
+                       echo '<a href="EBrewrite.php"><button>修改</button></a>';}
+                       ?>
                         <font size="4">
                             <ul>
                           <?php  while($row = mysqli_fetch_row($result)){
+                              echo '<form name="form" method="post" action="EBdelete.php">';
                               echo "<li>$row[0]</li>";
-                          }
-                          ?>
+                              echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row[0]</textarea>";
+                          if ($_SESSION['username'] != null) {
+                              echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                                  </ul>
                         </font>
 
@@ -129,43 +132,52 @@ $result4 = mysqli_query($link,$sql4);
                     </div>
                     <div id="menu1" class="tab-pane fade">
 
-
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
+                        <?php
+                        if ($_SESSION['username'] != null) {
+                          echo '<a href = "PEadd.php" ><button > 新增</button ></a >';
+                       echo '<a href = "PErewrite.php" ><button > 修改</button ></a >';
+                             } ?>
                         <font size="4">
                             <ul>
                                 <?php  while($row2 = mysqli_fetch_row($result2)){
+                                    echo '<form name="form" method="post" action="PEdelete.php">';
                                     echo "<li>$row2[0]</li>";
-                                }
-                                ?>
+                                    echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row2[0]</textarea>";
+                                if ($_SESSION['username'] != null) {
+                                    echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                             </ul>
                         </font>
 
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
+                       <?php if ($_SESSION['username'] != null) {
+                       echo '<a href="AAEadd.php"><button>新增</button></a>';
+                       echo '<a href="AAErewrite.php"><button>修改</button></a>';
+                        }?>
                         <font size="4">
                             <ul>
                                 <?php  while($row3 = mysqli_fetch_row($result3)){
+                                    echo '<form name="form" method="post" action="AAEdelete.php">';
                                     echo "<li>$row3[0]</li>";
-                                }
-                                ?>
+                                    echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row3[0]</textarea>";
+                                if ($_SESSION['username'] != null) {
+                                    echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                             </ul>
                         </font>
                     </div>
                     <div id="menu3" class="tab-pane fade">
-                        <a href=""><button>新增</button></a>
-                        <a href="EBrewrite.php"><button>修改</button></a>
-                        <a href=""><button>刪除</button></a>
+                        <?php if ($_SESSION['username'] != null) {
+                        echo '<a href="RIadd.php"><button>新增</button></a>';
+                       echo '<a href="RIrewrite.php"><button>修改</button></a>';
+                        }?>
                         <font size="4">
                             <ul>
                                 <?php  while($row4 = mysqli_fetch_row($result4)){
+                                    echo '<form name="form" method="post" action="RIdelete.php">';
                                     echo "<li>$row4[0]</li>";
-                                }
-                                ?>
+                                echo "<textarea hidden name='topOrigin' style='height: 25% ;width: 70%; '>$row4[0]</textarea>";
+                                if ($_SESSION['username'] != null) {
+                                echo '<input type="submit" name="top" value="刪除" /><br></form>' ;}}?>
                             </ul>
                         </font>
                     </div>

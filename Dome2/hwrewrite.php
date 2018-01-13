@@ -6,6 +6,7 @@ $result = mysqli_query($link,$sql);
 $row = mysqli_fetch_row($result);
 ?>
 <!--上方語法為啟用session，此語法要放在網頁最前方-->
+<?php if ($_SESSION['username'] != null){ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -129,4 +130,11 @@ $row = mysqli_fetch_row($result);
                 <td><a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/ani2/29/1514950900/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></td></tr></tbody></table></nobr>
     <p>沒有很可以但是我真的承受不起</p>
 </footer>
+
+
+<?php }else{
+    echo '<p><img src="happy.JPG" > </p>';
+    echo '<button><a href="hw.php">點我回去</a></button>';
+} ?>
+
 </html>

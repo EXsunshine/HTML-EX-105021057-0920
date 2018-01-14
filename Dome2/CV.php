@@ -72,8 +72,7 @@ $result = mysqli_query($link,$sql);
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($_SESSION['username'] != null) {
-                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>
-                        <li><a href="member.php"><span class="bottom">修改資料</span></a></li>';
+                    echo '<li><a href="logout.php"><span class="bottom">Logout</span></a></li>';
                 } else {
                     echo ' <li><a href="login.php"><span class="bottom">Login</span></a></li>';
                 }

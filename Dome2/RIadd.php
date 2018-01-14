@@ -99,7 +99,7 @@ $result = mysqli_query($link,$sql);
         <div class="content text-left">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <form name="form" method="post" action="RIadd_finish.php">
-                <p>Education Background新增內容:</p>
+                <p>Research Interests新增內容:</p>
                 <textarea name="top"  style="width: 70%;height: 25% "></textarea><br>
                 <input type="submit" name="button" value="確定" /><br>
             </form>

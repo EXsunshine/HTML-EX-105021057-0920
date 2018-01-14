@@ -67,12 +67,12 @@ $result = mysqli_query($link,$sql);
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="hw.php">Home</a></li>
-                <li class="active"><a href="Profile.php">Profile</a></li>
+                <li><a href="Profile.php">Profile</a></li>
                 <li><a href="Activity.php">Activity</a></li>
                 <li><a href="Program.php">Program</a></li>
                 <li><a href="https://www.researchgate.net/profile/Cheng_Yuan_Ho">ResearchGate</a></li>
                 <li><a href="https://tw.linkedin.com/in/chengyuanho/">Linkedin</a></li>
-                <li><a href="CV.php">CV</a></li>
+                <li class="active"><a href="CV.php">CV</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php

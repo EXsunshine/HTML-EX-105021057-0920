@@ -25,7 +25,7 @@ $result = mysqli_query($link,$sql);
             background-color: #FAF0E6;
         }
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {height: auto}
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -99,7 +99,7 @@ $result = mysqli_query($link,$sql);
         <div class="content text-left">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <form name="form" method="post" action="PEadd_finish.php">
-                <p>Education Background新增內容:</p>
+                <p>Professional Experience新增內容:</p>
                 <textarea name="top"  style="width: 70%;height: 25% "></textarea><br>
                 <input type="submit" name="button" value="確定" /><br>
             </form>

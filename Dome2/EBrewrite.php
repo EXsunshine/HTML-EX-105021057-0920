@@ -25,7 +25,7 @@ $result = mysqli_query($link,$sql);
             background-color: #FAF0E6;
         }
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {height: auto}
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -96,7 +96,7 @@ $result = mysqli_query($link,$sql);
             <body><embed src="http://w13.loxa.edu.tw/cy-ms93324/mikuclock.swf" width="100%" height="300" type="application/x-shockwave-flash"></body>
         </div>
 
-            <div class="content text-left">
+            <div class="content text-center">
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
                     <?php
